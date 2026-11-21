@@ -2,9 +2,7 @@
 
 **Specs first, then the crew.**
 
-> Early design. There is nothing to install yet. The repositories you may see
-> here come from SpecsFirst, the former name of this organization, and will be
-> replaced.
+> Early design. There is nothing to install yet.
 
 ## The idea
 
