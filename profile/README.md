@@ -1,30 +1,45 @@
-# SpecsFirst
+# Specrew
 
-SpecsFirst makes spec templates for agent-driven projects easy to share and find.
-Its public gallery lists them, and submitting one stays trivial.
+**Specs first, then the crew.**
 
-## Browse the gallery
+> Early design. There is nothing to install yet. The repositories you may see
+> here come from SpecsFirst, the former name of this organization, and will be
+> replaced.
 
-**[specsfirst.github.io/gallery](https://specsfirst.github.io/gallery/)**
+## The idea
 
-Filter templates by kind and tag, sort them by votes or by latest update, and
-vote or comment on each one. Templates can be hosted on any git forge.
+You talk to one agent, the **lead**. It turns your request into a spec, waits
+for your approval, then drives a crew of agents to build it:
 
-## Share a template
+| Role | Does |
+|------|------|
+| lead | talks with you, writes the spec and the task list, runs the crew |
+| implementer | does one task, against tests written beforehand |
+| tester | writes the tests that define "done", before any code |
+| reviewer | checks the result, with a different model than the author |
 
-A gallery entry is a five-line YAML file, `templates/<id>.yml`, sent as a pull
-request. Here is a real one:
+- **Specs first.** Every change starts as a spec in your repository, built on
+  [OpenSpec](https://github.com/Fission-AI/OpenSpec).
+- **Any model, any provider, any tool.** One file, `crew.yaml`, says which
+  model and which coding agent plays each role. Start from a profile (solo,
+  team, strict) and change one line at a time.
+- **Isolated.** Each task can run in its own sandbox. API keys stay outside the
+  agents' reach.
+- **Humans decide.** The approval of the spec and the final merge stay with
+  you, and the tooling enforces it.
 
-```yaml
-name: Multi repo specs template
-url: https://gitlab.inria.fr/dev-studio/specs-template
-description: A model-agnostic specs repo driving several code repos, with task files as contracts between orchestrator and coder.
-kind: software
-tags: [multi-repo]
-```
+## What this organization will provide
 
-The gallery detects everything else itself: license, tool-specific files,
-last update and a preview.
+- `specrew`: the crew, meaning roles, profiles and the `specrew` command.
+- `deploy`: where the crew runs, from a laptop to a shared server, with
+  optional sandboxing.
+- `examples`: sample projects, from a research notebook to a team application.
 
-- [How to contribute](https://github.com/SpecsFirst/gallery/blob/main/CONTRIBUTING.md)
-- [The gallery repository](https://github.com/SpecsFirst/gallery)
+## Who it is for
+
+Researchers who want an agent to help without losing track of what was done,
+teams who want agents they can trust and trace, and platform engineers who want
+to offer this to a whole lab on their own machines.
+
+Specrew is an independent project. It is not affiliated with OpenSpec or
+CrewAI.
