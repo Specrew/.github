@@ -50,7 +50,3 @@ to offer this to a whole lab on their own infrastructure.
   <a href="https://www.inria.fr"><b>Inria</b></a> &nbsp;·&nbsp;
   <a href="https://www.france-bioinformatique.fr"><b>IFB</b></a>
 </p>
-
----
-
-Specrew is an independent project. It is not affiliated with OpenSpec or CrewAI.
