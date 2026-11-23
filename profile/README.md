@@ -31,8 +31,8 @@ to build it.
 
 ## Repositories
 
-- [`specrew`](https://github.com/Specrew/specrew): roles, profiles and the `specrew` command.
-- [`deploy`](https://github.com/Specrew/deploy): where the crew runs, from a laptop to a shared server.
+- `specrew`: roles, profiles and the `specrew` command.
+- `deploy`: where the crew runs, from a laptop to a shared server.
 - `examples`: sample projects, from a research notebook to a team application.
 
 Repositories open as soon as a first usable version is out.
